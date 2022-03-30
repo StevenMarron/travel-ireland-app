@@ -1,5 +1,11 @@
 # Getting Started with Create React App
 
+INSTALLED NODE MODULES FOR THIS PROJECT
+
+npm install axios
+npm install react-router-dom@5.2.0
+npm install bootstrap
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
