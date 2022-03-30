@@ -2,12 +2,28 @@
     background-color: rgb(61, 124, 61);
 }
 
-.navbar-logo{
-    margin-left: 50px;;
+@media screen and (max-width:990px){
+    .navbar-logo{
+        margin:auto;
+    }
+    .nav-link{
+        text-align:center;
+        width: 50%;
+        margin-top: 10px;
+        margin-bottom:10px;
+        margin-left:auto;
+        margin-right:auto;
+        align-items: center;
+    }
 }
 
-.nav-link{
-    margin:10px;
+@media screen and (min-width:990px){
+    .nav-link{
+        margin:20px;
+    }
+}
+
+.nav-link{ 
     border-radius:30px;
     background-color: rgb(26, 54, 26);
     color: white !important;
