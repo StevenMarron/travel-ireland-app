@@ -1,5 +1,6 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
+import '../styles/HomeCarousel.css'
 import BoyneBridge from '../images/Boyne Bridge.jpg'
 import DCC from '../images/DCC.jpg'
 import DunNaRi from '../images/DunNaRi.jpg'
@@ -9,7 +10,7 @@ import RocheCastle from '../images/Roche Castle.jpg'
 
 function HomeCarousel(){
     return(
-        <div>
+        <div home-carousel>
 			<Carousel interval={2500}>
 				<Carousel.Item>
 					<Carousel.Caption>
