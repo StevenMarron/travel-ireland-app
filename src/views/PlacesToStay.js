@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import AccommodationAPI from "../components/AccommodationAPI";
 
 function PlacesToStay(){
     return(
-        <div>Places To Stay Page</div>
-    )
+        <div>
+            <h1>Where to stay</h1>
+            <AccommodationAPI />
+        </div>
+    );
 }
 
-export default PlacesToStay
+export default PlacesToStay;
