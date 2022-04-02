@@ -13,8 +13,8 @@ function Navbar(){
             </div>
             <div className="container-fluid">     
                 <Link to="/" className="nav-link">Home</Link>
-                <Link to="/thingstodo" className="nav-link">Things To Do</Link>
-                <Link to="/placestostay" className="nav-link">Places To Stay</Link>                    
+                <Link to="/thingstodo" className="nav-link">Activities</Link>
+                <Link to="/placestostay" className="nav-link">Accomodation</Link>                    
             </div>
 
         </nav>
