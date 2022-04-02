@@ -1,8 +1,14 @@
 import React from 'react'
+import Activities from '../components/Activities'
+import ActivitiesAPI from '../components/ActivitiesAPI'
 
 function ThingsToDo(){
     return(
-        <div>Things To Do Page</div>
+        <div>
+            <h1>Things To Do Page</h1>
+            <ActivitiesAPI/>
+            <Activities />            
+        </div>
     )
 }
 
