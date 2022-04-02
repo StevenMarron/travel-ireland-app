@@ -1,0 +1,20 @@
+.home-page-card{
+    margin:10px;
+    background-color: rgb(255, 204, 108);
+
+}
+
+.card-body{
+    text-align:center;
+    margin:10px;
+}
+
+.card-image{
+    border-radius: 50%;
+    display:block;
+    padding:10px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+}
