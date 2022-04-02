@@ -1,7 +1,13 @@
-.home-page-card{
-    margin:10px;
-    background-color: rgb(255, 204, 108);
+.card-container{
+    margin-left:1%;
+    width:98%;
+}
 
+.home-page-card{
+    align-items: center;
+    margin-bottom:5px;
+    border-radius: 30px;
+    background-color: rgb(255, 238, 221);
 }
 
 .card-body{
@@ -10,11 +16,22 @@
 }
 
 .card-image{
+    width:90%;
+    max-width:200px;
     border-radius: 50%;
     display:block;
     padding:10px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:10px;
-    margin-bottom:10px;
+    margin: 0 auto;
+}
+
+.home-card-button{
+    background-color: #1a361a;
+    color: white !important;
+    text-align:center;
+    border-radius: 30px;
+    border:0px;
+}
+
+.home-card-button:hover{
+    background-color:orange ;
 }
