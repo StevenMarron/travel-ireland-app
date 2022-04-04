@@ -1,3 +1,18 @@
 .home-page{
     background-color: #3d7c3d;
 }
+
+@keyframes fadein{
+    from {opacity:0%;}
+    to {opacity:100%;}
+}
+
+.home-carousel{
+    animation-duration:1.5s;
+    animation-name:fadein;
+}
+
+.home-page-cards{
+    animation-duration:1.5s;
+    animation-name:fadein;
+}
