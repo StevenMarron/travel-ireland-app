@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/Home.css'
 import HomeCarousel from '../components/HomeCarousel'
-import DCCArtMap from '../components/DCCArtMap'
+import TravelVideo from '../components/TravelVideo'
 import HomePageCards from '../components/HomePageCards'
 
 function Home(){
@@ -16,8 +16,8 @@ function Home(){
                 </div>
             </div>
             <div className="row">
-                <div className="col-lg-10 col-sm-8 p-0 m-auto">
-                    <DCCArtMap/>
+                <div className="col-lg-10 col-sm-10 p-0 m-auto">
+                    <TravelVideo />
                 </div>
             </div>
         </div> 
