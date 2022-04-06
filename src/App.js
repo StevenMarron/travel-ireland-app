@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./views/Home";
 import ThingsToDo from "./views/ThingsToDo";
 import PlacesToStay from "./views/PlacesToStay";
+import Covid from "./views/Covid";
 import Navbar from "./components/Navbar";
 
 function App(){
@@ -20,6 +21,9 @@ function App(){
             </Route>
             <Route path="/placestostay">
               <PlacesToStay />
+            </Route>
+            <Route path="/covid">
+              <Covid />
             </Route>
           </Switch>
         </div>

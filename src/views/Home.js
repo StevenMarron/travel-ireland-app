@@ -1,6 +1,5 @@
 import React from 'react'
 import '../styles/Home.css'
-import '../styles/HomeCarousel.css'
 import HomeCarousel from '../components/HomeCarousel'
 import DCCArtMap from '../components/DCCArtMap'
 import HomePageCards from '../components/HomePageCards'
