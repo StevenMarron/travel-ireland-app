@@ -14,7 +14,8 @@ function Navbar(){
             <div className="container-fluid">     
                 <Link to="/" className="nav-link">Home</Link>
                 <Link to="/thingstodo" className="nav-link">Activities</Link>
-                <Link to="/placestostay" className="nav-link">Accomodation</Link>                    
+                <Link to="/placestostay" className="nav-link">Accomodation</Link>
+                <Link to="/covid" className="nav-link">Covid-19</Link>
             </div>
 
         </nav>

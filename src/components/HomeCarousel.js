@@ -10,7 +10,7 @@ import RocheCastle from '../images/Roche Castle.jpg'
 
 function HomeCarousel(){
     return(
-        <div home-carousel>
+        <div className="home-carousel">
 			<Carousel interval={2500}>
 				<Carousel.Item>
 					<Carousel.Caption>
