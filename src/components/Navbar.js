@@ -10,7 +10,7 @@ function Navbar(){
             <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container-lg">
                     <Link to="/" className="navbar-brand" tabIndex="0">
-                        <img src={Ireland} className="navbar-brand" width="80" height="auto" alt="Ireland Logo"></img>    
+                        <img src={Ireland} className="navbar-brand" width="80" height="auto" alt="Ireland Logo" />
                     </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
