@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import '../styles/Navbar.css';
 import { Collapse } from "bootstrap";
-import Ireland from '../images/Ireland-temp-logo.png';
+import Ireland from '../images/travel-ireland-logo.png';
 
 function Navbar(){
     return(
@@ -10,7 +10,7 @@ function Navbar(){
             <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container-lg">
                     <Link to="/" className="navbar-brand" tabIndex="0">
-                        <img src={Ireland} className="navbar-brand" alt="Ireland Logo"></img>    
+                        <img src={Ireland} className="navbar-brand" width="80" height="auto" alt="Ireland Logo"></img>    
                     </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
