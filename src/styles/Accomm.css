@@ -10,22 +10,23 @@ button.search
 }
 .row > div
 {
-	padding: 0 3px;
+	padding: 0 5px;
 }
 .accomm-card
 {
 	height: 400px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 	border: 1px solid #ded596;
 	border-radius: 5px;
+	background-color: #dddac5;
 }
 .card-details
 {
 	padding: 8px 12px;
-	background-color: #dddac5;
 }
 .image
 {
+	border-left: 10px solid #fff;
 	background-color: #fff;
 }
 h2
