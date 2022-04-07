@@ -14,7 +14,8 @@ function Navbar(){
             <div className="container-lg">     
                 <Link to="/" className="nav-link">Home</Link>
                 <Link to="/thingstodo" className="nav-link">Activities</Link>
-                <Link to="/placestostay" className="nav-link">Accommodation</Link>                    
+                <Link to="/placestostay" className="nav-link">Accommodation</Link>
+                <Link to="/covid" className="nav-link">Covid-19</Link>
             </div>
 
         </nav>
