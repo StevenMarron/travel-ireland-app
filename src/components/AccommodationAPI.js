@@ -18,24 +18,26 @@ function AccommodationAPI(props){
                     $filter: "address/addressRegion" + " eq " + "'" + query + "'"
                 }
             });
-        console.log([[response.data]]);
         setAccomm([response.data]);
+        console.log([response.data]);
     }
     return(
         <div>
             <section>
                 <label>Enter a county to search for accommodation</label><br />
-                <input id="search" value={query} onChange={handleSearch} /><br />
-                <button onClick={hotelSearch}>Search</button>
+                <input id="search" value={query} onChange={handleSearch} />
+                <button className="search" onClick={hotelSearch}>Search</button>
             </section>
             <section>
                     {accomm.map(function(i, index){
                         return(
-                            <div key={index}>
+                            <div className="row" key={index}>
+                                <p>Number of results: {i.results.length}</p>
                                 {i.results.map(function(j, index){
                                     return(
-                                        <div key={index}>
-                                            <Accommodation tags={i.results[index].tags} name={i.results[index].name} addressRegion={i.results[index].address.addressRegion} url={i.results[index].url} telephone={i.results[index].telephone} /> 
+                                        <div className="col-md-4 position-relative" key={index}>
+                                            <Accommodation image={i.results[index].image.url} name={i.results[index].name} tags={i.results[index].tags} addressLocality={i.results[index].address.addressLocality} addressRegion={i.results[index].address.addressRegion} url={i.results[index].url} telephone={i.results[index].telephone} />
+                                            <p className="count">{index + 1}</p>
                                         </div>
                                     );
                                 })}

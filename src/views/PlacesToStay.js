@@ -4,7 +4,7 @@ import AccommodationAPI from "../components/AccommodationAPI";
 function PlacesToStay(){
     return(
         <div>
-            <h1>Where to stay</h1>
+            <h1>Where to stay in Ireland</h1>
             <AccommodationAPI />
         </div>
     );

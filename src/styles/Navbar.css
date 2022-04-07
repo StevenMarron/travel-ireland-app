@@ -1,34 +1,38 @@
-.navbar{
-    background-color: #3d7c3d;
+.navbar
+{
+    background-color: #069754;
 }
-
-@media screen and (max-width:990px){
-    .navbar-logo{
-        margin:auto;
+.nav-link
+{ 
+    border-radius: 30px;
+    background-color: #1a361a;
+    color: #fff !important;
+}
+.nav-link:hover
+{
+    background-color: orange;
+}
+@media screen and (max-width: 990px)
+{
+    .navbar-logo
+    {
+        margin: auto;
     }
-    .nav-link{
-        text-align:center;
+    .nav-link
+    {
+        text-align: center;
         width: 50%;
         margin-top: 10px;
-        margin-bottom:10px;
-        margin-left:auto;
-        margin-right:auto;
+        margin-bottom:1 0px;
+        margin-left: auto;
+        margin-right: auto;
         align-items: center;
     }
 }
-
-@media screen and (min-width:990px){
-    .nav-link{
-        margin:20px;
+@media screen and (min-width: 990px)
+{
+    .nav-link
+    {
+        margin: 20px;
     }
-}
-
-.nav-link{ 
-    border-radius:30px;
-    background-color: #1a361a;
-    color: white !important;
-}
-
-.nav-link:hover{
-    background-color: orange;
 }
