@@ -63,7 +63,9 @@ h4
 p, a, label
 {
   font-size: 18px;
-.video-container {
+}
+.video-container
+{
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 35px;
@@ -71,7 +73,8 @@ p, a, label
   overflow: hidden;
   margin-bottom:10px;
 }
-.video-container iframe{
+.video-container iframe
+{
   position: absolute;
   top:0;
   left: 0;
