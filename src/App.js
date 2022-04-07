@@ -5,10 +5,11 @@ import ThingsToDo from "./views/ThingsToDo";
 import PlacesToStay from "./views/PlacesToStay";
 import Covid from "./views/Covid";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App(){
   return(
-    <div>
+    <section>
       <Router>
         <Navbar />
         <div>
@@ -27,8 +28,9 @@ function App(){
             </Route>
           </Switch>
         </div>
+        <Footer />
       </Router>
-    </div>
+    </section>
   );
 }
 
