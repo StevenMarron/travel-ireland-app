@@ -1,7 +1,7 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import '../styles/Navbar.css'
-import Ireland from '../images/Ireland-temp-logo.png'
+import React from 'react';
+import {Link} from 'react-router-dom';
+import '../styles/Navbar.css';
+import Ireland from '../images/Ireland-temp-logo.png';
 
 function Navbar(){
     return(
@@ -15,12 +15,11 @@ function Navbar(){
                 <Link to="/" className="nav-link">Home</Link>
                 <Link to="/thingstodo" className="nav-link">Activities</Link>
                 <Link to="/placestostay" className="nav-link">Accommodation</Link>
-                <Link to="/covid" className="nav-link">Covid-19</Link>
+                <Link to="/covid" className="nav-link">COVID-19</Link>
             </div>
 
         </nav>
-
-    )
+    );
 }
 
-export default Navbar
+export default Navbar;
