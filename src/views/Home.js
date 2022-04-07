@@ -1,8 +1,8 @@
-import React from 'react'
-import '../styles/Home.css'
-import HomeCarousel from '../components/HomeCarousel'
-import TravelVideo from '../components/TravelVideo'
-import HomePageCards from '../components/HomePageCards'
+import React from 'react';
+import '../styles/Home.css';
+import HomeCarousel from '../components/HomeCarousel';
+import TravelVideo from '../components/TravelVideo';
+import HomePageCards from '../components/HomePageCards';
 
 function Home(){
     return(
@@ -20,7 +20,7 @@ function Home(){
                     <TravelVideo />
                 </div>
             </div>
-        </div> 
+        </div>
     );
 }
 
