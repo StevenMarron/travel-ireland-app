@@ -4,8 +4,8 @@
 }
 .nav-link
 { 
-    border-radius: 30px;
-    background-color: #1a361a;
+    border-radius: 5px;
+    /*background-color: #1a361a;*/
     color: #fff !important;
 }
 .nav-link:hover
@@ -33,6 +33,6 @@
 {
     .nav-link
     {
-        margin: 20px;
+        margin: 0;
     }
 }
