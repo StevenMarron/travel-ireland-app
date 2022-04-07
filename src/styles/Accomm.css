@@ -10,12 +10,12 @@ button.search
 }
 .row > div
 {
-	padding: 0 5px;
+	padding: 0 10px;
 }
 .accomm-card
 {
 	height: 400px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	border: 1px solid #ded596;
 	border-radius: 5px;
 	background-color: #fbf4c4;
@@ -29,9 +29,9 @@ button.search
 	border-left: 10px solid #fff;
 	background-color: #fff;
 }
-h2
+.card-details h2
 {
-	font-size: 34px;
+	font-size: 30px;
 }
 .standout
 {
@@ -48,7 +48,7 @@ p:nth-of-type(2) a
 	background-color: #fff;
 	border-radius: 100%;
 	position: absolute;
-	bottom: 5px;
+	bottom: 15px;
 	right: 30px;
 	text-align: center;
 	font-weight: bold;
