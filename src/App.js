@@ -8,8 +8,8 @@ import Navbar from "./components/Navbar";
 
 function App(){
   return(
-    <div className="container-fluid">
-      <Router>  
+    <div>
+      <Router>
         <Navbar />
         <div>
           <Switch>
