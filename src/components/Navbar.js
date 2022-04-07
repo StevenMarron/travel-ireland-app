@@ -11,7 +11,7 @@ function Navbar(){
                 <img src={Ireland} className="navbar-brand" alt="Ireland Logo"></img>    
             </Link>
             </div>
-            <div className="container-lg">     
+            <div className="container-lg">
                 <Link to="/" className="nav-link">Home</Link>
                 <Link to="/thingstodo" className="nav-link">Activities</Link>
                 <Link to="/placestostay" className="nav-link">Accommodation</Link>
