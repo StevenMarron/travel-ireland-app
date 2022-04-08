@@ -1,24 +1,26 @@
 import React from 'react';
-import '../styles/Home.css';
+import '../App.css';
 import HomeCarousel from '../components/HomeCarousel';
-import TravelVideo from '../components/TravelVideo';
-import HomePageCards from '../components/HomePageCards';
+import HomePageCard1 from '../components/HomePageCard1';
+import HomePageCard2 from '../components/HomePageCard2';
 
 function Home(){
     return(
        <div className="container-fluid home-page">
-            <div className="row carousel-cards">
-                <div className="col-lg-6 col-md-12 col-sm-12 home-carousel p-0">
-                    <HomeCarousel/>
-                </div>
-                <div className="col-lg-6 col-md-12 col-sm-12 home-page-cards">
-                    <HomePageCards/>
-                </div>
-            </div>
+
             <div className="row">
-                <div className="col-lg-10 col-sm-10 p-0 m-auto">
-                    <TravelVideo />
+                <div className="col-lg-12 col-md-12 col-sm-12 m-auto home-carousel">
+                    <HomeCarousel/>
+                </div>              
+            </div>
+
+            <div className="row ">
+                <div className="col-lg-6 col-md-12 col-sm-12 card-row ">
+                    <HomePageCard1/>
                 </div>
+                <div className="col-lg-6 col-md-12 col-sm-12 card-row">
+                    <HomePageCard2/>
+                </div>                  
             </div>
         </div>
     );

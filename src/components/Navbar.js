@@ -1,13 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import '../styles/Navbar.css';
+import '../App.css';
 import { Collapse } from "bootstrap";
 import Ireland from '../images/travel-ireland-logo.png';
 
 function Navbar(){
     return(
         <header>
-            <nav className="navbar navbar-expand-lg navbar-light">
+            <nav className="navbar navbar-expand-lg navbar-dark">
                 <div className="container-lg">
                     <Link to="/" className="navbar-brand" tabIndex="0">
                         <img src={Ireland} className="navbar-brand" width="80" height="auto" alt="Ireland Logo" />
