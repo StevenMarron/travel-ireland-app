@@ -1,5 +1,5 @@
 import React from "react";
-import Accomm from "../styles/Accomm.css";
+import "../App.css";
 
 function Accommodation(props){
 	return(

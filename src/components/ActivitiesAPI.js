@@ -22,17 +22,17 @@ function ActivitiesAPI(){
         }else{
             setError(query + " is not a valid County name")
         }
-        console.log([response.data])
+        // console.log([response.data])
     }
     
     return(
         <div>
             <div className="searchBar">
                 <input value={query} onChange={handleSearchCounty}/>
-                <button className="figureButton" onClick={getActivities}>Search by County</button>                
+                <button className="figureButton" onClick={getActivities}>Search</button>                
             </div>
 
-            <h1>{error}</h1>
+            <h3><br/>{error}</h3>
             <div>
                 {activities.map(function(i, index){
                     return(
