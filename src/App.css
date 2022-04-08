@@ -1,3 +1,9 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 section
 {
   margin: 40px 0 0;
@@ -161,7 +167,15 @@ p:nth-of-type(2) a
   border-radius: 50%;
   display:block;
   padding:10px;
-  margin: 0 auto;
+  margin: 0 auto;  
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
+}
+
+.card-image:hover{
+  width:210px;
+  padding:0px;
+
 }
 
 .home-card-button{
@@ -176,3 +190,51 @@ p:nth-of-type(2) a
 .home-card-button:hover{
   background-color:orange ;
 }
+
+@keyframes drop{
+  from{height:0vh}
+  to{height:50vh}
+}
+.home-hero-image{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url(images/Newgrange-Hero.jpg);
+  height:50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-duration:1.5s;
+  animation-name:fadein, drop;
+}
+
+.home-hero-text{
+  text-align: center;
+  position: relative;
+  top:50%;
+  left: 50%;
+  padding:10px;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.home-hero-text h1{
+  font-family: Verdana;
+  font-size:150px !important;
+}
+
+.home-hero-text h2{
+  font-family:Verdana;
+  font-size:70px !important;
+
+}
+
+@media only screen and (max-width:1200px){
+  .home-hero-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.5)), url(images/Newgrange-Hero.jpg);
+    height:250px;
+  }
+  .home-hero-text h1{
+    font-size:50px !important;
+  }
+  .home-hero-text h2{
+    font-size:20px !important;
+  }
+} 
