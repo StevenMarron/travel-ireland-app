@@ -14,7 +14,7 @@ function Home(){
             <div className="row">
                 <div className="col-lg-12 col-md-12 col-sm-12 m-auto home-carousel">
                     <HomeCarousel/>
-                </div>              
+                </div>
             </div>
 
             <div className="row ">
