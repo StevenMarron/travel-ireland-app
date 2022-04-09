@@ -1,9 +1,13 @@
 import React from 'react'
+import CovidCasesAPI from "../components/CovidCasesAPI";
 
 function Covid(){
     return(
-        <h1>Covid Page</h1>
-    )
+        <div>
+            <h1>Covid Page</h1>
+            <CovidCasesAPI />
+        </div>
+    );
 }
 
-export default Covid
+export default Covid;
