@@ -5,7 +5,11 @@ function Covid(){
     return(
         <div>
             <h1>Covid Page</h1>
-            <CovidCasesAPI />
+            <div className="row">
+                <div className="col-lg-10 col-sm-12 m-auto">
+                <CovidCasesAPI />  
+                </div>             
+            </div>
         </div>
     );
 }

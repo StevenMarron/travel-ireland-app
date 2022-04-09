@@ -9,7 +9,7 @@ import Newgrange from '../images/Newgrange.jpg'
 
 function HomeCarousel(){
     return(
-        <div>
+        <div className="home-carousel">
 			<Carousel interval={2500}>
 				<Carousel.Item>
 					<img className="d-block w-100" src={RocheCastle} title="Roche Castle" alt="Roche Castle"></img>

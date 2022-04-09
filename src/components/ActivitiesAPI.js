@@ -20,9 +20,9 @@ function ActivitiesAPI(){
         if([response.data.count]>0){
             setError("")
         }else{
-            setError(query + " is not a valid County name")
+            setError("'"+query + "' is not a valid County name")
         }
-        // console.log([response.data])
+         console.log(response)
     }
     
     return(
