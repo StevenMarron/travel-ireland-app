@@ -238,3 +238,35 @@ p:nth-of-type(2) a
     font-size:20px !important;
   }
 } 
+
+.doyle{  
+  z-index:1;
+  overflow:hidden;
+  position: fixed;
+  animation: myanimation;
+  animation-delay:3s;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes myanimation{
+  from{
+    visibility:hidden;
+    right:0%;
+    bottom:-50%;
+  }
+  to{
+    visibility:visible;
+    bottom:0%;
+    right:0%;
+  }
+}
+
+.doyle-close{
+  visibility:hidden;
+}
+
+.doyle-button{
+  float:right;
+}
