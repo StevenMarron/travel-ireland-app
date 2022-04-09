@@ -41,6 +41,8 @@ p, a, label
 .home-carousel{
   animation-duration:1.5s;
   animation-name:fadein;
+  padding-left:2px;
+  padding-right:2px;
 }
 
 .video-container
@@ -173,9 +175,7 @@ p:nth-of-type(2) a
 }
 
 .card-image:hover{
-  width:210px;
-  padding:0px;
-
+  padding:30px;
 }
 
 .home-card-button{
@@ -188,7 +188,7 @@ p:nth-of-type(2) a
 }
 
 .home-card-button:hover{
-  background-color:orange ;
+  background-color:#ffa500 ;
 }
 
 @keyframes drop{

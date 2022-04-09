@@ -6,6 +6,7 @@ npm install axios,
 npm install react-router-dom@5.2.0,
 npm install bootstrap,
 npm install react-bootstrap,
+npm install highcharts highcharts-react-official,
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
