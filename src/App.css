@@ -37,13 +37,12 @@ p, a, label
   from {opacity:0%;}
   to {opacity:100%;}
 }
-.home-carousel
-{
-  animation-duration: 1.5s;
-  animation-name: fadein;
-  padding-left: 2px;
-  padding-right: 2px;
+
+.home-carousel{
+  animation-duration:1.5s;
+  animation-name:fadein;
 }
+
 .video-container
 {
   position: relative;
@@ -247,14 +246,15 @@ p:nth-of-type(2) a
   z-index: 1;
   overflow: hidden;
   position: fixed;
-  animation: myanimation;
-  animation-delay: 3s;
+
+  animation: doyleanimation;
+  animation-delay:3s;
   animation-duration: 5s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-@keyframes myanimation
-{
+
+@keyframes doyleanimation{
   from{
     visibility: hidden;
     right: 0;
@@ -275,6 +275,22 @@ p:nth-of-type(2) a
 {
   float: right;
 }
+
+.home-info-image{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.home-info-text{
+  text-align:center;
+  padding:20px;
+  color:white;
+}
+
+.home-info-row{
+  background-color:#069754;
+
 footer
 {
   color: #fff;
