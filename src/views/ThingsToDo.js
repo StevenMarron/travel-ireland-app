@@ -4,7 +4,7 @@ import TravelVideo from '../components/TravelVideo';
 
 function ThingsToDo(){
     return(
-        <div className="container">
+        <div className="container-lg">
             <div className="col-lg-8 col-sm-10">
                 <h1>Things to do in Ireland</h1>
                 <p>Search for activities by county</p>

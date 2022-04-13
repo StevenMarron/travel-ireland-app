@@ -38,7 +38,7 @@ p, a, label
   to {opacity:100%;}
 }
 
-.home-carousel{
+.fadein{
   animation-duration:1.5s;
   animation-name:fadein;
 }
@@ -290,6 +290,7 @@ p:nth-of-type(2) a
 
 .home-info-row{
   background-color:#069754;
+}
 
 footer
 {

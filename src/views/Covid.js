@@ -4,9 +4,9 @@ import Doyle from '../components/Doyle'
 
 function Covid(){
     return(
-        <div>
+        <div className="container-lg">
             <h1>Covid Page</h1>
-            <div className="row">
+            <div className="row fadein">
                 <div className="col-lg-10 col-sm-12 m-auto">
                 <CovidCasesAPI />  
                 </div>             
