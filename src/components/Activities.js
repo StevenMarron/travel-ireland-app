@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
 function Activities(props){
     return(
         <div>
-            <h2>Activity:</h2><h3> {props.name}</h3>
-            <h2>Area: </h2><h3> {props.location}</h3>
-            <h2>tags: </h2><h3>{props.tags}</h3>
-            <br/>
+            <h2>Activity: {props.name}</h2>
+            <p>Area: {props.location}</p>
+            <p>tags: {props.tags}</p>
+            <br />
         </div>
     )
 }
 
-export default Activities
+export default Activities;
