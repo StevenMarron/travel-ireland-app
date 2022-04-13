@@ -16,7 +16,7 @@ function HomeInfo(){
                         <p>
                             Ireland might be small, but it's mighty!
                             <br/>
-                            We offer a broad range of activities from golfing to arts and crafts all across the country
+                            We offer a broad range of activities from golfing to arts and crafts all across the country.
                             This site makes it easy for you to find inspiration for your next trip, whether you're a visitor
                             or a native! Using our activity and accomodation services, provided by Failte Ireland, you're sure
                             to find something to entertain you on your travels. Happy searching!
