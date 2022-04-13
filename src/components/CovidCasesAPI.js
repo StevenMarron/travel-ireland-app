@@ -59,7 +59,7 @@ function CovidCasesAPI(){
                 floating: true,
                 borderWidth: 1,
                 backgroundColor:
-                    Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF',
+                    Highcharts.defaultOptions.legend.backgroundColor || '#ffffff',
                 shadow: true
             },
             credits: {
