@@ -188,6 +188,8 @@ p:nth-of-type(2) a
   border-radius: 5px;
   border: 0;
   padding: 10px;
+  margin:0 auto;
+  display:block;
 }
 .home-card-button:hover
 {
