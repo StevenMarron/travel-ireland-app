@@ -1,20 +1,25 @@
-import React from 'react'
+import React from "react";
 import CovidCasesAPI from "../components/CovidCasesAPI";
-import Doyle from '../components/Doyle'
+import Doyle from "../components/Doyle";
 
 function Covid(){
     return(
-        <div>
-            <h1>Covid Page</h1>
-            <div className="row">
-                <div className="col-lg-10 col-sm-12 m-auto">
-                <CovidCasesAPI />  
-                </div>             
-            </div>
+        <section className="container">
+            <section className="container">
+                <div className="row">
+                <div className="col-lg-8">
+                    <h1>COVID-19 cases in Ireland</h1>
+                    <p>Listed by county.</p>
+                    </div>
+                </div>
+            </section>
+            <section className="row">
+                <CovidCasesAPI />              
+            </section>
             <div className="doyle">
-                <Doyle/>
+                <Doyle />
             </div>
-        </div>
+        </section>
     );
 }
 
