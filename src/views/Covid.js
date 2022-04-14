@@ -1,6 +1,7 @@
 import React from "react";
 import CovidCasesAPI from "../components/CovidCasesAPI";
 import Doyle from "../components/Doyle";
+import CovidHero from "../components/CovidHero"
 
 function Covid(){
     return(
@@ -13,6 +14,9 @@ function Covid(){
                     </div>
                 </div>
             </section>
+            <div>
+                <CovidHero />
+            </div>
             <section className="row">
                 <CovidCasesAPI />              
             </section>
