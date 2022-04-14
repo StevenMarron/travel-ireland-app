@@ -1,15 +1,20 @@
 import React from "react";
 import ActivitiesAPI from "../components/ActivitiesAPI";
 import TravelVideo from "../components/TravelVideo";
+import AttractionsHero from "../components/AttractionsHero"
 
 function ThingsToDo(){
     return(
+               
         <div className="container">
             <div className="col-lg-8">
                 <h1>Things to do in Ireland</h1>
                 <p>Search for activities by county</p>
                 <ActivitiesAPI />
                 <br />
+            </div>
+            <div>
+                <AttractionsHero />
             </div>
             <div className="col-lg-8">
                 <h2>Need a litte inspiration for your visit?</h2>
