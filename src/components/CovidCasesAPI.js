@@ -1,15 +1,15 @@
 import React from "react";
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
-import Highcharts from 'highcharts/highstock';
-import BarChart from 'highcharts-react-official';
+import Highcharts from "highcharts/highstock";
+import BarChart from "highcharts-react-official";
 
 function CovidCasesAPI(){
     const [cases, setCases] = useState([]);
-    const [county, setCounty] = useState([])
-    const [population, setPopulation] = useState([])
+    const [county, setCounty] = useState([]);
+    const [population, setPopulation] = useState([]);
     
-    const config= {
+    const config={
             chart: {
                 type: 'bar',
                 height: 800
@@ -39,7 +39,6 @@ function CovidCasesAPI(){
                     overflow: 'justify'
                 }
             },
-
             plotOptions: {
                 bar: {
                     dataLabels: {
@@ -78,30 +77,31 @@ function CovidCasesAPI(){
 
     useEffect(() => {
         const dummyConst = async function (){
-            var response = await axios.get("https://services1.arcgis.com/eNO7HHeQ3rUcBllm/arcgis/rest/services/Covid19CountyStatisticsHPSCIrelandOpenData/FeatureServer/0/query?where=1%3D1&outFields=ConfirmedCovidCases,PopulationProportionCovidCases,TimeStampDate,CountyName,PopulationCensus16&outSR=4326&f=json")
-            var formattedDataCounty = response.data.features.map(function(i, index){
-                return response.data.features[index].attributes.CountyName   
+            let response = await axios.get("https://services1.arcgis.com/eNO7HHeQ3rUcBllm/arcgis/rest/services/Covid19CountyStatisticsHPSCIrelandOpenData/FeatureServer/0/query?where=1%3D1&outFields=ConfirmedCovidCases,PopulationProportionCovidCases,TimeStampDate,CountyName,PopulationCensus16&outSR=4326&f=json")
+            let formattedDataCounty = response.data.features.map(function(i, index){
+                return response.data.features[index].attributes.CountyName
             })
-            var formattedCases = response.data.features.map(function(i, index){
-                return response.data.features[index].attributes.ConfirmedCovidCases 
+            let formattedCases = response.data.features.map(function(i, index){
+                return response.data.features[index].attributes.ConfirmedCovidCases
             })
-            var formattedPopulation = response.data.features.map(function(i, index){
+            let formattedPopulation = response.data.features.map(function(i, index){
                 return response.data.features[index].attributes.PopulationCensus16
             })
-            setCases(formattedCases)
-            setCounty(formattedDataCounty)
-            setPopulation(formattedPopulation)
-            // console.log(response);
+            setCases(formattedCases);
+            setCounty(formattedDataCounty);
+            setPopulation(formattedPopulation);
+            //console.log(response);
         }
             const useEffectData = dummyConst()
-    }, [])
-
+    }, []);
     return(
-        <div>
-            <section>
-                <BarChart highcharts={Highcharts} options={config}/>
-            </section>
-        </div>
+        <section className="container-lg">
+            <div className="row">
+                <div className="col-lg-10">
+                    <BarChart highcharts={Highcharts} options={config} />
+                </div>
+            </div>
+        </section>
     );
 }
 

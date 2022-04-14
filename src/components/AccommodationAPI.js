@@ -1,11 +1,12 @@
 import React from "react";
-import {useState} from "react";
+import { useState } from "react";
 import axios from "axios";
 import Accommodation from "./Accommodation";
 
 function AccommodationAPI(props){
     const [query, setQuery] = useState("");
     const [accomm, setAccomm] = useState([]);
+    const [error, setError] = useState("");
     function handleSearch(e){
         e.preventDefault();
         setQuery(e.target.value);
@@ -18,8 +19,12 @@ function AccommodationAPI(props){
                     $filter: "address/addressRegion" + " eq " + "'" + query + "'"
                 }
             });
+        if([response.data.count] <= 0){
+            setError("Your entry '" + query + "' is not a valid county. Please try again.");
+        } else{
+            setError("");
+        }
         setAccomm([response.data]);
-        console.log([response.data]);
     }
     return(
         <div>
@@ -27,6 +32,7 @@ function AccommodationAPI(props){
                 <label>Enter a county to search for accommodation</label><br />
                 <input id="search" value={query} onChange={handleSearch} />
                 <button className="search" onClick={hotelSearch}>Search</button>
+                <p className="error">{error}</p>
             </section>
             <section>
                     {accomm.map(function(i, index){
@@ -35,7 +41,7 @@ function AccommodationAPI(props){
                                 <p>Number of results: {i.results.length}</p>
                                 {i.results.map(function(j, index){
                                     return(
-                                        <div className="col-md-4 position-relative" key={index}>
+                                        <div className="col-lg-4 position-relative" key={index}>
                                             <Accommodation image={i.results[index].image.url} name={i.results[index].name} tags={i.results[index].tags} addressLocality={i.results[index].address.addressLocality} addressRegion={i.results[index].address.addressRegion} url={i.results[index].url} telephone={i.results[index].telephone} />
                                             <p className="count">{index + 1}</p>
                                         </div>
