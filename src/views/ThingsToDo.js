@@ -18,13 +18,7 @@ function ThingsToDo(){
                     <br />
                     </div>
                 </div>
-            <div className="col-lg-8">
-                <h1>Things to do in Ireland</h1>
-                <p>Search for activities by county</p>
-                <ActivitiesAPI />
-                <br />
-            </div>
-            <div className="col-lg-8">
+                 <div className="col-lg-8">
                 <h2>Need a litte inspiration for your visit?</h2>
                 <p>Watch the ten best places to visit in Ireland to help you prepare for you next trip.</p>
                 <br />
