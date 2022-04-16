@@ -306,3 +306,33 @@ footer
   color: #fff;
   text-align: center;
 }
+
+.activity-card{
+  background-color: #069754;
+  border:5px solid white;
+  border-radius:5px;
+  padding:10px;
+  overflow-wrap:break-word;
+}
+
+.activity-content{
+  padding:10px;
+  margin:10px;
+  color:white;
+}
+
+.activity-content-h2{
+  border-bottom:2px solid white;
+}
+
+.activity-content-p{
+    opacity:75%;
+}
+
+.activity-content a:link{
+  color:orange;
+}
+
+.activity-content a:visited{
+  color:#023d22;
+}
