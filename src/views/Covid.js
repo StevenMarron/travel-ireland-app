@@ -1,8 +1,8 @@
 import React from "react";
 import CovidCasesAPI from "../components/CovidCasesAPI";
 import Doyle from "../components/Doyle";
-import CovidHero from "../components/CovidHero"
-import CovidTips from "../components/CovidTips"
+import CovidHero from "../components/CovidHero";
+import CovidTip from "../components/CovidTip";
 
 function Covid(){
     return(
@@ -18,11 +18,11 @@ function Covid(){
                 <CovidHero />
             </div>
             <div>
-                <CovidTips />
+                <CovidTip />
             </div>
             <div>
-            <h2><u>COVID-19 Cases in Ireland</u></h2>
-            <p>Listed by county:</p>
+                <h2><u>COVID-19 cases in Ireland</u></h2>
+                <p>Listed by county:</p>
             </div>
             <section className="row">
                 <CovidCasesAPI />              
