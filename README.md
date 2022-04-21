@@ -9,8 +9,19 @@ npm install react-bootstrap,
 npm install highcharts highcharts-react-official,
 
 To convert to PWA after creation: 
-copied service-worker.js,serviceWorkerRegistration.js from existing PWA and inserted serviceWorkerRegister.register(); to index.js file. npm run build. 
+copied service-worker.js,serviceWorkerRegistration.js from existing PWA and inserted serviceWorkerRegister.register(); to index.js file. 
+npm run build. 
 npm install -g serve.
+
+Surge deployment:
+npm install -g surge
+npm run build 
+cd build/
+surge
+email:
+password:
+domain: ___.surge.sh
+each change should be redeployed by repeating from npm run build
 
 To run as PWA use the following command instead of npm start, this will give you the option to download the React App: 
 serve -s build.
