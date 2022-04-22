@@ -6,25 +6,14 @@ import CovidTip from "../components/CovidTip";
 
 function Covid(){
     return(
-        <section className="container">
-            <section className="container">
-                <div className="row">
-                <div className="col-lg-8">
-                    <h1>COVID-19 in Ireland</h1>
-                    </div>
-                </div>
-            </section>
-            <div>
+        <section className="container-fluid">
+            <div className="col-lg-10 col-sm-12 m-auto ">
                 <CovidHero />
             </div>
-            <div>
+            <div className="col-lg-10 col-sm-12 covid-tips">
                 <CovidTip />
             </div>
-            <div>
-                <h2><u>COVID-19 cases in Ireland</u></h2>
-                <p>Listed by county:</p>
-            </div>
-            <section className="row">
+            <section className="row covid-cases-api">
                 <CovidCasesAPI />              
             </section>
             <div className="doyle">

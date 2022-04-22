@@ -141,6 +141,9 @@ p:nth-of-type(2) a
 {
     background-color: orange;
 }
+.nav-list{
+  text-align:right;
+}
 .card-container
 {
   margin: 10px;
@@ -335,4 +338,47 @@ footer
 
 .activity-content a:visited{
   color:#023d22;
+}
+
+.covid-tips{
+  background-color: #FEDB24;
+  color:black;
+  padding:50px;
+  margin:auto;
+  margin-top: 10px;
+  border-radius:5px;
+}
+.covid-tips-text{
+  overflow-wrap:break-word;
+}
+.covid-tips-text > h2{
+  text-align: center;
+}
+.covid-tips-text > h3{
+  text-align: center;
+}
+.covid-tips-text> h3 > a{
+  color:black;
+}
+.covid-tips-text> h3 > a:visited{
+  color:#3D989B;
+}
+.covid-cases-api{
+  margin:10px;
+  padding:10px;
+}
+.activity-text{
+  text-align: center;
+}
+.top-pick{
+  background-color: #069754;
+  color:white;
+  border:2px solid white;
+  border-radius: 5px;
+}
+.top-pick-text{
+  padding:10px;
+}
+.top-pick-text > h2{
+  text-align: center;
 }

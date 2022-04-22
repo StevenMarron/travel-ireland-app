@@ -12,13 +12,14 @@ function CovidCasesAPI(){
     const config={
             chart: {
                 type: 'bar',
-                height: 800
+                height: 800,
+                backgroundColor: '#dbfeff'
             },
             title: {
                 text: 'Covid-19 Cases vs. Population per County'
             },
             subtitle: {
-                text: 'Source: <a href="https://covid-19.geohive.ie/datasets/4779c505c43c40da9101ce53f34bb923_0/api">Covid-19.geohive.ie</a>'
+                text: 'Source: <a href="https://covid-19.geohive.ie/datasets/4779c505c43c40da9101ce53f34bb923_0/api" target="blank">Covid-19.geohive.ie</a>'
             },
             xAxis: {
                 categories: county,
@@ -32,7 +33,7 @@ function CovidCasesAPI(){
             yAxis: {
                 min: 0,
                 title: {
-                    text: 'Population',
+                    text: 'Population (Census 2016)',
                     align: 'low'
                 },
                 labels: {
@@ -69,7 +70,7 @@ function CovidCasesAPI(){
                 data: cases,
                 color: '#ffa500'
             }, {
-                name: 'Population',
+                name: 'Population (Census 2016)',
                 data: population,
                 color: '#069754'
             }]
@@ -97,7 +98,7 @@ function CovidCasesAPI(){
     return(
         <section className="container-lg">
             <div className="row">
-                <div className="col-lg-10">
+                <div className="col-lg-10 m-auto">
                     <BarChart highcharts={Highcharts} options={config} />
                 </div>
             </div>

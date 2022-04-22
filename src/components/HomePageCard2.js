@@ -14,7 +14,7 @@ function HomePageCard2(){
                     <h2 className="card-title">Places to stay</h2>
                     <p className="card-text">As lovely as Ireland's historical ruins are, we suggest browsing for a more comfortable form of accomodation for your stay.</p>
                     <p className="card-text">Use our search feature to find the perfect accommodation for your next stay.</p>
-                    <Link to="/placestostay">
+                    <Link to="/placestostay" style={{ textDecoration: 'none' }}>
                             <button className="home-card-button">Search accomodation</button>
                     </Link>
                 </div>
