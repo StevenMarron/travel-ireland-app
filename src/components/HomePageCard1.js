@@ -14,7 +14,7 @@ function HomePageCard1(){
                     <h2 className="card-title">Things to do</h2>
                     <p className="card-text">There's no shortage of things to do on this little green island of ours! Be sure to sample some of the local food and drink as you explore it.</p>
                     <p className="card-text">Search activities for your next trip to the Emerald Isle.</p>
-                    <Link to="/thingstodo">
+                    <Link to="/thingstodo" style={{ textDecoration: 'none' }}>
                         <button className="home-card-button">Search activities</button>
                     </Link>
                 </div>            
