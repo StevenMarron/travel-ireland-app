@@ -13,6 +13,8 @@ function ThingsToDo(){
                     <ActivitiesHero />                    
                 </div>
             </div>
+            {/* Div containing imported hero-image taking up 10 out of 12 width spaces on larger screens
+            and the full 12 on smaller screens leading to a responsive feel */}
 
             <div className="row">
                 <div className="col-lg-10 col-sm-12 m-auto activity-text">
@@ -22,6 +24,7 @@ function ThingsToDo(){
                     <br />
                 </div>
             </div>
+            {/* Activities API imported below title, the activity-text class centers the text according to css */}
 
             <div className="row">
                 <div className="col-lg-10 col-sm-10 m-auto activity-text">
@@ -31,6 +34,7 @@ function ThingsToDo(){
                     <TravelVideo />
                 </div>
             </div>
+            {/* Travel video component consisting of embedded youtube video imported as a row as suggested watching for travel inspiration */}
 
             <div className="row">
                 <div className="col-lg-12 col-sm-12">
@@ -42,6 +46,7 @@ function ThingsToDo(){
                     <br />
                 </div>
             </div>
+            {/* Top picks component imported */}
         </div>
     );
 }

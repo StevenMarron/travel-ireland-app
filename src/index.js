@@ -17,6 +17,8 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://cra.link/PWA
 serviceWorkerRegistration.register();
+// The serveiceWorkerRegistration was imported and changed from ".unregister()" to ".register()" in order
+// to allow the website to be used a Progressive Web App
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

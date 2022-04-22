@@ -31,9 +31,13 @@ function CovidTip(props){
                 Stay home if you feel unwell.
                 </li>
             </ul>
+            {/* An unordered list is returned with list items of covid-19 tips */}
             <h3>For more information on current Covid-19 restrictions and guidelines please visit: <a href="https://www.citizensinformation.ie/en/covid19/living_with_covid19_plan.html" target="blank">https://www.citizensinformation.ie/en/covid19/living_with_covid19_plan.html</a></h3>
+            {/* A link is provided to citizensinformation for more info on covid restrictions
+            The link is set to "blank" target, meaning the associated webpage will open in a new tab */}
             <br></br>
             <h3>Covid-19 case numbers can be seen displayed below for your reference</h3>
+            {/* A header tag is used to preface the next component on the views page */}
         </div>
     )
 }

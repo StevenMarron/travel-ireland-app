@@ -10,6 +10,7 @@ function Footer(){
 				<div className="row">
 					<div className="col-lg-12">
 						<p>&copy;<span id="year"></span> Travel Ireland</p>
+						{/* Year component is imported into the footer component */}
 					</div>
 				</div>
 			</div>
