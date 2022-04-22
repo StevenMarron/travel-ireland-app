@@ -12,6 +12,7 @@ function PlacesToStay(){
                 </div>
             </section>
             <AccommodationAPI />
+            {/* AccomodationAPI is imported to the PlacesToStay view component underneath a title inside a seperate div */}
         </section>
     );
 }

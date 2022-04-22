@@ -2,6 +2,7 @@ import React from "react";
 import '../App.css'
 
 function TopPicks(){
+    // Activity top picks written by site admins can be added and removed via this component which is then imported in the Activity view
     return(
         <section className="container-fluid">
             <div className="row">

@@ -46,6 +46,7 @@ p, a, label
   animation-duration:1.5s;
   animation-name:fadein;
 }
+/* This fade in animation is applied to several rows of the home page to give a premium feel to the website */
 
 .video-container
 {
@@ -93,6 +94,8 @@ button.search
 	border-radius: 5px;
 	background-color: #fbf4c4;
 }
+/* styling applied to the accomodation cards produced from API results */
+
 .card-details
 {
 	padding: 8px 12px;
@@ -106,6 +109,7 @@ button.search
 {
 	font-size: 30px;
 }
+/* By referencing the h2 elements within the .card-details class, any div with this class will apply this style to it's h2 element */
 .standout
 {
 	text-shadow: 1px 1px 1px #fff;
@@ -134,16 +138,18 @@ p:nth-of-type(2) a
 .nav-link
 { 
     border-radius: 5px;
-    /*background-color: #1a361a;*/
     color: #fff !important;
 }
 .nav-link:hover
 {
     background-color: orange;
 }
+/* the hover css feature applies css properties to an element when the mouse moves over it,
+in this instance the hover feature turns a nav-link from green to orange in order to highlight which button the users mouse is over */
 .nav-list{
   text-align:right;
 }
+/* aligns nav-list links to the right hand side when on smaller screens and the collapse button is triggered revealing nav-links */
 .card-container
 {
   margin: 10px;
@@ -169,11 +175,14 @@ p:nth-of-type(2) a
 {
   width: 200px;
   border-radius: 50%;
+  /* A border-radius of 50% creates a circle out of a square image */
   display: block;
   padding: 10px;
-  margin: 0 auto;  
+  margin: 0 auto;
+  /* margin: 0 auto centers the image   */
   transition-timing-function: ease;
   transition-duration: 0.5s;
+  /* A shrinking transition is applied to the card images where the padding is increased over the course of 0.5 seconds when a mouse hovers over them */
 }
 .card-image:hover
 {
@@ -183,6 +192,7 @@ p:nth-of-type(2) a
 {
   text-align: center;
 }
+/* centers the text of the card title */
 .home-card-button
 {
   background-color: #069754;
@@ -194,6 +204,7 @@ p:nth-of-type(2) a
   margin:0 auto;
   display:block;
 }
+/* The card buttons replicate the colour scheme and hover effect of the nav-links in the navbar */
 .home-card-button:hover
 {
   background-color: #ffa500;
@@ -207,30 +218,40 @@ p:nth-of-type(2) a
     height: 50vh
   }
 }
+/* Drop animation is applied to the home-hero-image to give a premium feel and provide a sense of movement as soon as a user visits the site
+It also draws the eyes downwards, acting as a call to action for the intro, carousel and cards */
 .home-hero-image
 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url("images/Newgrange-Hero.jpg");
+  /* unlike importing an image into a component the url of the image is used to reference it as a background image, a gradient is also applied to make the text stand out */
   height: 50vh;
+  /* this height matches the max height of the drop animation */
   background-position: center;
   background-repeat: no-repeat;
+  /* this background image is called inside the home-hero component and should only appear once, hence no-repeat */
   background-size: cover;
   animation-duration: 1.5s;
   animation-name: fadein, drop;
+  /* Both the fade in and drop animations are applied to the background image */
 }
 .home-hero-text
 {
   text-align: center;
   position: relative;
+  /* This makes the text stay within the div, it doesn't scroll down the page as the user does */
   top: 50%;
   left: 50%;
+  /* centers the text */
   padding: 10px;
   transform: translate(-50%, -50%);
+  /* centers the text */
   color: #fff;
 }
 .home-hero-text h1
 {
   font-family: "Verdana", sans-serif;
   font-size: 150px !important;
+  /* Selects the h1 elements of the home-hero-text class and applies different font properties. !important overrides any previous or global property values */
 }
 .home-hero-text h2
 {
@@ -238,12 +259,16 @@ p:nth-of-type(2) a
   font-size: 70px !important;
 
 }
-@media only screen and (max-width:1200px)
+@media only screen and (max-width:1200px) and (min-width:0px)
+/* Media queries are used to resize the text and background image based off of screen size
+In this example when the screen size goes below 1200px the below values will be applied */
 {
   .home-hero-image
   {
     background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.5)), url("images/Newgrange-Hero.jpg");
-    height: 250px;
+    height: 50vh;
+    animation-duration: 1.5s;
+    animation-name: fadein, drop;
   }
   .home-hero-text h1
   {
@@ -257,41 +282,53 @@ p:nth-of-type(2) a
 .doyle
 {  
   z-index: 1;
+  /* z-index allows the png to appear above other divs */
   overflow: hidden;
   position: fixed;
-
+  /* Keeps the png in the same position even when scrolling */
   animation: doyleanimation;
+  /* name of animation sequence */
   animation-delay:3s;
+  /* animation is delayed so user must be on the page for 3 seconds before commencing */
   animation-duration: 5s;
+  /* it takes 5 seconds for the animation to complete */
   animation-timing-function: ease-out;
+  /* creates a varying speed of the animation, where by it slows down as it reaches the peak */
   animation-fill-mode: forwards;
 }
 
 @keyframes doyleanimation{
   from{
     visibility: hidden;
+    /* can't be seen */
     right: 0;
     bottom: -50%;
+    /* positioned all the way to the right of the screen and below the bottom */
   }
   to{
     visibility: visible;
+    /* can be seen */
     bottom: 0;
     right: 0;
+    /* positioned all the way to the right and resting on the bottom of the screen */
   }
 }
 .doyle-close
 {
   visibility: hidden;
+  /* triggered by the close button, this hides the popup again */
 }
 .doyle-button
 {
   float: right;
+  /* positions the close button to the right of the popup */
 }
 
 .home-info-image{
   display:block;
   margin-left:auto;
   margin-right:auto;
+  /* centers the image within it's col */
 }
 
 .home-info-text{
@@ -314,8 +351,10 @@ footer
   background-color: #069754;
   border:5px solid white;
   border-radius:5px;
+  /* creates a rounded corner on the card */
   padding:10px;
   overflow-wrap:break-word;
+  /* prevents text from overflowing out of div by breaking words to the next line */
 }
 
 .activity-content{
@@ -334,15 +373,18 @@ footer
 
 .activity-content a:link{
   color:orange;
+  /* in keeping with the colour scheme of the site linke appear orange unless they have been previously visited */
 }
 
 .activity-content a:visited{
   color:#023d22;
+  /* Once visited a link will turn dark green */
 }
 
 .covid-tips{
   background-color: #FEDB24;
   color:black;
+  /* The covid page is the exception to the green white and orange colour scheme, were we used yellow, white and black */
   padding:50px;
   margin:auto;
   margin-top: 10px;
@@ -362,6 +404,7 @@ footer
 }
 .covid-tips-text> h3 > a:visited{
   color:#3D989B;
+  /* a light blue, in reference to the blue used in the hero image, is used once the link has been visited */
 }
 .covid-cases-api{
   margin:10px;

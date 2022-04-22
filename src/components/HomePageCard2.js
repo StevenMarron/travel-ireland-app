@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import WicklowRuin from "../images/Wicklow Ruin.jpg";
 import "../App.css";
+import App from "../App";
+// Styling information imported from App.css file
 
 function HomePageCard2(){
     return(
@@ -17,6 +19,7 @@ function HomePageCard2(){
                     <Link to="/placestostay" style={{ textDecoration: 'none' }}>
                             <button className="home-card-button">Search accomodation</button>
                     </Link>
+                    {/* Link to other pages embedded in button */}
                 </div>
             </div>
         </div> 
