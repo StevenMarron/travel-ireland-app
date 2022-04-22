@@ -23,6 +23,13 @@ password:
 domain: ___.surge.sh
 each change should be redeployed by repeating from npm run build
 
+added the following to manifest.js file to meet PWA standards:
+  "start_url":"https://travelireland.surge.sh",
+  "scope":"https://travelireland.surge.sh",
+
+When searching be sure to include "https://" at the start of the PWA address or it will not be available for download
+
+
 To run as PWA use the following command instead of npm start, this will give you the option to download the React App: 
 serve -s build.
 
