@@ -33,7 +33,7 @@ function AccommodationAPI(props){
         setAccomm([response.data]);
     }
     return(
-        <div>
+        <section className="container-lg">
             <section>
                 <label>Enter a county to search for accommodation</label><br />
                 <input id="search" value={query} onChange={handleSearch} />
@@ -64,7 +64,7 @@ function AccommodationAPI(props){
                         );
                     })}
             </section>
-        </div>
+        </section>
     );
 }
 
